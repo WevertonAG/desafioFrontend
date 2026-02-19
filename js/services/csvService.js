@@ -1,7 +1,32 @@
-export async function carregarPedidos() {
+/*export async function carregarPedidos() {
     const response = await fetch("../data/pedidos.csv");
     const texto = await response.text();
     return parseCSV(texto);
+}*/
+export async function carregarPedidos() {
+    try {
+        const response = await fetch("../data/pedidos.csv");
+
+        // Verifica se a resposta HTTP foi bem-sucedida
+        if (!response.ok) {
+            throw new Error(`Erro HTTP: ${response.status} - ${response.statusText}`);
+        }
+
+        const texto = await response.text();
+
+        // Valida conteúdo vazio
+        if (!texto.trim()) {
+            throw new Error("Arquivo CSV está vazio.");
+        }
+
+        return parseCSV(texto);
+
+    } catch (error) {
+        console.error("Erro ao carregar pedidos:", error);
+
+        // Retorna array vazio para não quebrar a aplicação
+        return [];
+    }
 }
 
 function parseCSV(texto) {
