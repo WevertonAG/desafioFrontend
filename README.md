@@ -11,7 +11,7 @@ Desenvolvido com:
 
 ---
 
-# 📁 Estrutura do Projeto
+# Estrutura do Projeto
 
 ```powershell
 frontend/
@@ -57,9 +57,9 @@ https://github.com/WevertonAG/desafioFrontend
 cd desfioFronte
 ```
 
-# ▶️ Como Executar
+# Como Executar
 
-## ✅ Opção mais simples (recomendada)
+## Opção mais simples (recomendada)
 
 Se você possui Python instalado:
 
