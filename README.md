@@ -18,12 +18,25 @@ frontend/
 │
 ├── data/
 │ └── pedidos.csv
+|
+├── frontend/
+│     ├── assets/
+|     |    └── logo.png
+|     └── css/
+|         └── style.css
+|     
 │
 ├── js/
-│ ├── model.js
-│ ├── view.js
-│ └── controller.js
-│
+│ ├── components/
+│ |    └── table.js
+| ├── services/
+| |     └── csvService.js
+│ ├── utils
+│ |     └── helpers.js
+│ ├──app.js
+| └──state.js
+|
+|
 └── index.html
 ```
 
@@ -40,7 +53,8 @@ Por questões de segurança do navegador (CORS policy), o arquivo **não pode se
 # Clonar o repositório
 
 ```bash
-
+https://github.com/WevertonAG/desafioFrontend
+cd desfioFronte
 ```
 
 # ▶️ Como Executar
@@ -57,7 +71,7 @@ python -m http.server 5500
 Depois acesse no navegador:
 
 ```bash
-http://localhost:5500/frontend
+http://localhost:5500/
 ```
 ## Alternativa (VS Code)
 
