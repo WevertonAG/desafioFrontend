@@ -33,8 +33,8 @@ frontend/
 | |     └── csvService.js
 │ ├── utils
 │ |     └── helpers.js
-│ ├──app.js
-| └──state.js
+│ |
+| └──app.js
 |
 |
 └── index.html
@@ -93,7 +93,7 @@ Normalização de valores numéricos
 
 Cálculo automático do total
 
-Estrutura modular (Model / View / Controller)
+Estrutura modular
 
 Separação de responsabilidades
 

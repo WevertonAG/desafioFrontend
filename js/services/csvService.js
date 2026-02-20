@@ -1,10 +1,7 @@
-/*export async function carregarPedidos() {
-    const response = await fetch("../data/pedidos.csv");
-    const texto = await response.text();
-    return parseCSV(texto);
-}*/
 export async function carregarPedidos() {
     try {
+
+        // 
         const response = await fetch("../data/pedidos.csv");
 
         // Verifica se a resposta HTTP foi bem-sucedida

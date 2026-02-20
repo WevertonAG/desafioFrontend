@@ -1,4 +1,4 @@
-import { calcularTotal } from "../utils/helpers.js";
+import { calcularTotal } from "../utils/controllers.js";
 
 export function renderTabela(pedidos) {
     const tbody = document.getElementById("tabelaPedidos");

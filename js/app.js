@@ -1,7 +1,11 @@
 import { carregarPedidos } from "./services/csvService.js";
-import { state } from "./state.js";
 import { renderTabela, popularFiltro } from "./components/table.js";
-import { filtrarPorCliente, ordenarPorTotal } from "./utils/helpers.js";
+import { filtrarPorCliente, ordenarPorTotal } from "./utils/controllers.js";
+
+const state = { 
+    pedidos: [],
+    pedidosFiltrados: []
+};
 
 async function init() {
     state.pedidos = await carregarPedidos();
