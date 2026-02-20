@@ -56,6 +56,7 @@ Por questões de segurança do navegador (CORS policy), o arquivo **não pode se
 https://github.com/WevertonAG/desafioFrontend
 cd desfioFronte
 ```
+Ou baixar e extrair manualmente.
 
 # Como Executar
 
